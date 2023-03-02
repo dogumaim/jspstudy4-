@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- configs -->
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+		
+	<!-- controllers -->
+	<bean id="indexController" class="com.yong.controller.IndexController"></bean>
+
+	<bean id="helloController" class="com.yong.controller.HelloController"></bean>
+	
+	<bean id="memoController" class="com.yong.controller.MemoController"></bean>
+	
+	<bean id="memberController" class="com.yong.controller.MemberController"></bean>
+	
+	<bean id="orderController" class="com.yong.controller.OrderController"></bean>
+	
+	<bean id="paramTestController" class="com.yong.controller.ParamTestController"></bean>
+	
+	<bean id="loginController" class="com.yong.controller.LoginController"></bean>
+	
+	<bean id="viewTestController" class="com.yong.controller.ViewTestController"></bean>
+	
+	<bean id="modelTestController" class="com.yong.controller.ModelTestController"></bean>
+	
+	<bean id="animeController" class="com.yong.controller.AnimeController"></bean>
+	<!-- DAOs -->
+	<bean id="memoDao" class="com.yong.memo.model.MemoDAOImple"></bean>
+	
+	<bean id="memberDao" class="com.yong.member.model.MemberDAOImple"></bean>
+		
+	<bean id="loginDao" class="com.yong.login.model.LoginDAOImple"></bean>
+	
+
+	
+	
+	<!--  viewResolver -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+</beans>
