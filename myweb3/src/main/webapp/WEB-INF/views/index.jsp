@@ -31,6 +31,8 @@ function openLogin(){
 	<div>${sessionScope.sname }님 로그인중... | <a href="logout2.do">로그아웃</a></div>
 </c:if>
 <ul>
+	<li><a href="fileDownList.do">파일 다운로드 목록</a></li>
+	<li><a href="fileUploadForm.do">파일 업로드</a></li>
 	<li><a href="hello.do">Spring MVC</a></li>.
 	<li><a href="memoWrite.do">메모 작성하기</a></li>
 	<li><a href="member.do">회원가입 하기</a></li>
@@ -56,6 +58,7 @@ function openLogin(){
 	<li><a href="model/modelOk.do">모델 테스트4(Map반환)</a></li>
 	<li><a href="model/modelOk.do">모델 테스트5(Model반환)</a></li>  <!-- dto, Model, Map  -->
 	<li><a href="aniFindA.do">애니메이션 검색</a></li>
+	<li><a href="freeList.do">자유게시판</a></li>
 </ul>
 </body>
 </html>
